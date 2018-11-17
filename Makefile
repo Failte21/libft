@@ -6,7 +6,7 @@
 #    By: lsimon <lsimon@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/07 10:36:05 by lsimon            #+#    #+#              #
-#    Updated: 2018/10/21 10:16:43 by lsimon           ###   ########.fr        #
+#    Updated: 2018/11/17 10:18:24 by lsimon           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -83,11 +83,13 @@ NAME = libft.a
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	ar -r $@ $^
-	ranlib $@
+	@ar -r $@ $^
+	@ranlib $@
+	@echo "[LIBFT compiled.]\n"
 
 %.o: %.c libft.h
-	gcc $(CFLAGS) -c $^
+	@gcc $(CFLAGS) -c $^
+	@echo -n .
 
 .PHONY: clean fclean
 
