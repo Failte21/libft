@@ -6,7 +6,7 @@
 #    By: lsimon <lsimon@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/07 10:36:05 by lsimon            #+#    #+#              #
-#    Updated: 2018/11/17 10:18:24 by lsimon           ###   ########.fr        #
+#    Updated: 2018/12/04 12:23:21 by lsimon           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -74,7 +74,12 @@ SRCS =	ft_atoi.c\
 		ft_recursive_factorial.c\
 		ft_sqrt.c\
 		ft_print_bits.c\
-		ft_sort_int_tab.c
+		ft_sort_int_tab.c\
+		ft_put_ulong_x.c\
+		ft_hex_len.c\
+		ft_put_hex_precision.c\
+		ft_put_hex_swap.c\
+		ft_put_byte_base.c\
 
 OBJS =	$(SRCS:.c=.o)
 

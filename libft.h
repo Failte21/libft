@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lsimon <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: lsimon <lsimon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 14:52:24 by lsimon            #+#    #+#             */
-/*   Updated: 2016/11/10 09:43:41 by lsimon           ###   ########.fr       */
+/*   Updated: 2018/12/08 13:16:07 by lsimon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,5 +87,12 @@ int				ft_recursive_factorial(int nb);
 int				ft_sqrt(int nb);
 void			ft_print_bits(unsigned char octet);
 void			ft_sort_int_tab(int *tab, unsigned int size);
+void			ft_put_ulong_x(unsigned long value);
+unsigned int	ft_hex_len(unsigned long value);
+void			ft_put_hex_precision(unsigned long value,\
+									unsigned int precision);
+void			ft_put_hex_swap(unsigned long value);
+void			ft_put_hex_swap(unsigned long value);
+void			ft_put_byte_base(char byte, unsigned int base);
 
 #endif
